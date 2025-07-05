@@ -21,8 +21,12 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
-    .button {
+    .button-container {
+      display: flex;
+      justify-content: center;
       margin-top: 1.5em;
+    }
+    .button {
       padding: 12px 24px;
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
@@ -47,7 +51,9 @@
     <img src="drumkit.jpg" alt="Drum Kit Preview">
   </a>
 
-  <button class="button" onclick="window.open('video-promo.mp4', '_blank')">🎥 See It on Stage</button>
+  <div class="button-container">
+    <button class="button" onclick="window.open('video-promo.mp4', '_blank')">See It on Stage</button>
+  </div>
 
   <p><em>Best viewed on iPhone or iPad using Safari</em></p>
 </body>
